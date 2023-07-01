@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url(./keyframe.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 62.5%;
+  max-width: 1500px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.5s;
+}
+
+/* SLIDER STYLE */
+
+.slider {
+  position: relative;
+  opacity: 1;
+  animation: fade 3.3s linear infinite;
+  transition: all ease-in 0.5s;
+}
+
+.img-wrapper {
+  width: 100%;
+  /* width: 100vw; */
+  transition: all ease-in 0.5s;
+}
+
+.slider-img {
+  object-fit: cover;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #0066b3;
+  border-radius: 100%;
+}
+
+.circle-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+.active {
+  height: 30px;
+  border-radius: 200px;
+  background-color: #0066b3;
+}
+/* SLIDER STYLE */
+
+/* ARTICLE STYLE */
+.article {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.4rem;
+  padding: 0 2.2rem 2.2rem 2.2rem;
+}
+
+.article-img {
+  width: 65px;
+  padding: 10px;
+  transform: translateY(-40%);
+  background-color: white;
+  border-radius: 100%;
+}
+
+.article-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 450;
+  color: #47badd;
+}
+.article-content {
+  text-align: justify;
+  font-size: 0.85rem;
+  width: 210px;
+  padding: 0.8rem 0;
+}
+.article-link {
+  display: flex;
+  font-size: 0.85rem;
+  justify-content: flex-end;
+  align-items: center;
+  color: #0066b3;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.article-link:hover > a {
+  margin-right: 0.8rem;
+}
+/* ARTICLE STYLE */
+
+/* SEARCH BAR STYLE */
+.phone-search {
+  padding: 0 2.2rem;
+  color: white;
+}
+
+.searchbar {
+  background-color: #0066b3;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-number {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.searchbar input {
+  background-color: #1a76bb;
+  border: none;
+  width: 300px;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  text-align: right;
+  color: white;
+  background-image: url("../images/search-icon.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 97%;
+}
+
+.searchbar input::placeholder {
+  color: rgba(255, 255, 255, 0.462);
+}
+
+.searchbar input:focus {
+  background-color: #00599d;
+  border: none;
+  outline: none;
+}
+/* SEARCH BAR STYLE */
+
+/* SOLUTION STYLE */
+.section-solution {
+  padding: 2.2rem;
+}
+
+.solution {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+  box-shadow: 0px 4px #00599d;
+}
+
+.section-title {
+  text-align: center;
+  color: #00599d;
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-bottom: 2px solid #00599d;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.solution-img {
+  margin-top: 1.8rem;
+  width: 278px;
+  height: 179px;
+  transition: all ease-in-out 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -100%;
+  width: 150%;
+  height: 30%;
+  background-color: rgba(255, 255, 255, 0.174);
+  z-index: 10;
+  transform: rotate(-45deg);
+}
+
+.solution-img:hover {
+  transform: scale(110%);
+}
+
+.solution-img:hover > .before {
+  animation: flash ease-in-out 0.4s;
+}
+
+.solution-img img {
+  object-fit: cover;
+}
+.solution-title {
+  font-weight: 400;
+  color: #00a0d0;
+  font-size: 1rem;
+  padding: 0.8rem 0;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.solution-title:hover {
+  color: #00599d;
+}
+
+.solution-content {
+  width: 280px;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.solution-btn {
+  display: flex;
+  align-items: center;
+  float: right;
+  gap: 0.3rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: #0066b3;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  margin-bottom: 2.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00508d;
+}
+/* SOLUTION STYLE */
+
+/* NEWS STYLE */
+.section-news {
+  padding: 2.2rem;
+  overflow: hidden;
+}
+.news-img {
+  width: 200px;
+  height: 120px;
+  overflow: hidden;
+}
+.news-img img {
+  object-fit: cover;
+}
+.customer-img {
+  width: 150px;
+  height: 150px;
+}
+.customer-img img {
+  object-fit: cover;
+}
+
+.section-wrapper {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: space-between;
+  margin-top: 1.8rem;
+}
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.4rem;
+}
+.news-item {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  justify-content: space-between;
+}
+
+.news-title {
+  width: 60%;
+  cursor: pointer;
+}
+.news-title:hover {
+  color: #00a0d0;
+}
+
+.new-wrapper {
+  width: 70%;
+}
+
+.feedback-wrapper {
+  width: 70%;
+}
+
+.news-wrapper h3,
+.feedback-wrapper h3 {
+  font-size: 1rem;
+  margin-bottom: 1.4rem;
+  color: #00599d;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.news-wrapper h3 span {
+  width: 20%;
+}
+
+.feedback-wrapper h3 span {
+  width: 80%;
+}
+
+.feedback {
+  /* width: 30rem; */
+  position: relative;
+  height: 80%;
+  overflow: hidden;
+}
+
+.feedback-item {
+  display: flex;
+  gap: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+.feedback-circle {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  align-self: end;
+}
+
+.comment {
+  width: 70%;
+  text-align: justify;
+  font-size: 0.85rem;
+  font-style: italic;
+  padding-right: 0.3rem;
+}
+
+.line {
+  width: 100%;
+  background-color: #eee;
+  height: 5px;
+}
+/* NEWS STYLE */

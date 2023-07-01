@@ -1,0 +1,126 @@
+header {
+  box-shadow: 0px 15px 5px -15px #949494;
+}
+.searchbar2 {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2.2rem;
+}
+
+.phone-number2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0066b3;
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.search2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search2 input {
+  padding: 0.5rem;
+  outline: #ccc;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  width: 250px;
+  background-image: url(../images/search-icon-png-2.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 1.8rem;
+  color: #ccc;
+}
+
+.search2 .btn-find {
+  background-color: #0296e1;
+  margin-bottom: 0;
+}
+
+.btn-find:hover {
+  background-color: #005596;
+}
+
+/* //////////////////////////////// */
+.breadcrums-group {
+  text-transform: uppercase;
+  padding: 1.2rem 2.2rem;
+  font-size: 0.9rem;
+  color: #77778d;
+}
+
+.breadcrums-item:first-child {
+  color: black;
+}
+
+/* //////////////////////////////// */
+.section-signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.2rem;
+}
+.form-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0066b3;
+  text-transform: uppercase;
+  margin-bottom: 2.2rem;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+  flex-direction: column;
+  font-size: 0.85rem;
+}
+
+form label {
+  justify-self: end;
+}
+
+form input,
+select,
+textarea {
+  width: 500px;
+  padding: 0.4rem;
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+
+form .box {
+  width: 100px;
+  height: 33px;
+  border: 1px solid #ccc;
+}
+.btn-group {
+  display: flex;
+  gap: 0.8rem;
+}
+.btn {
+  margin-top: 2.2rem;
+  font-size: 1.2rem;
+}
+.btn-signup {
+  background-color: #e6050a;
+}
+.btn-signup:hover {
+  background-color: #ae0104;
+}
+.btn-retry {
+  background-color: #f0ad4e;
+}
+.btn-retry:hover {
+  background-color: #ce9443;
+}
+
+.retry-icon {
+  font-size: 1.8rem;
+  color: #0066b3;
+}

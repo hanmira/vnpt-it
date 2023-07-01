@@ -1,0 +1,27 @@
+@keyframes fade {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    left: -100%;
+  }
+  100% {
+    top: 50%;
+    left: 70%;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
