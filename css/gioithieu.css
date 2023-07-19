@@ -1,0 +1,380 @@
+/* SEARCHBAR STYLE */
+header {
+  box-shadow: 0px 15px 5px -15px #949494;
+}
+.searchbar2 {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2.2rem;
+}
+
+.phone-number2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0066b3;
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.search2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search2 input {
+  padding: 0.8rem;
+  outline: #ccc;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  width: 250px;
+  background-image: url(../images/search-icon-png-2.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 1.8rem;
+  color: #ccc;
+  caret-color: #0066b3;
+}
+.search2 input:focus {
+  border: 1px solid #0066b3;
+}
+
+.search2 .btn-find {
+  background-color: #0296e1;
+  margin-bottom: 0;
+  height: 43px;
+  font-size: 0.95rem;
+}
+
+.btn-find:hover {
+  background-color: #005596;
+}
+/* SEARCHBAR STYLE */
+
+/* TABS STYLE */
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2rem;
+  padding: 1.4rem 2.2rem;
+}
+
+.tabs {
+  /* background-color: rgb(155, 255, 155); */
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.tab-panel {
+  /* padding: 0.8rem; */
+  border: 1px solid #ddd;
+}
+
+.tab-name {
+  background-color: #f6f7f8;
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+
+.tab-name:hover {
+  color: #2893e6;
+}
+
+.tab-list {
+  /* padding: 0.8rem; */
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-item {
+  padding: 0.8rem;
+  padding-right: 0;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tab-item:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-link:hover {
+  color: #2893e6;
+}
+
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* .tab-item:hover > .tab-dropdown {
+  display: block;
+} */
+
+.tab-dropdown {
+  padding-left: 1.8rem;
+  margin-top: 0.8rem;
+  width: 100%;
+  display: none;
+}
+
+.tab-item-nested {
+  padding: 0.8rem 0;
+}
+
+.tab-item-nested:hover {
+  color: #2893e6;
+}
+
+.main-content {
+  /* background-color: aquamarine; */
+}
+
+.active-item {
+  color: #0066b3;
+  font-weight: 600;
+  border-right: 4px solid #0066b3;
+}
+
+.tab-content {
+  font-size: 1.05rem;
+  display: none;
+}
+
+.tab-content p {
+  line-height: 1.75;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.tab-title {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #0066b3;
+  margin-top: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tab-title-2 {
+  text-transform: uppercase;
+  padding: 0.8rem 0;
+  border-bottom: 3px solid #0066b3;
+}
+
+.leader-name {
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+}
+
+.leader-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  justify-content: center;
+  margin: 2.4rem 0;
+}
+
+.leader-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leader-item:last-child {
+  justify-self: center;
+  grid-column-start: span 3;
+}
+
+.leader-img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 100%;
+  filter: grayscale(100);
+  transition: all ease-in-out 0.5s;
+}
+
+.leader-img:hover {
+  filter: grayscale(0);
+  transform: scale(110%);
+}
+
+.leader-img img {
+  object-fit: cover;
+}
+
+.show {
+  display: block;
+}
+
+#cocau-1 .leader-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  width: 70%;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+#cocau-1 .leader-item:first-child {
+  justify-self: center;
+  grid-column-start: span 3;
+}
+
+#cocau-1 .leader-item:last-child {
+  grid-column-start: span 1;
+}
+
+.signature {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  line-height: 1.5;
+}
+
+#doitac .tab-title,
+#khachhang .tab-title {
+  text-align: center;
+  position: relative;
+}
+
+#doitac .tab-title::before,
+#khachhang .tab-title::before {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#doitac .tab-title::after,
+#khachhang .tab-title::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tab-img-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+#doitac .tab-img,
+#khachhang .tab-img {
+  /* width: 25%; */
+  transition: all ease-in-out 0.5s;
+}
+
+#doitac .tab-img:hover,
+#khachhang .tab-img:hover {
+  transform: scale(105%);
+  box-shadow: 2px 2px 12px 2px #ccc;
+}
+/* TAB STYLE */
+
+/* BREADCRUMS STYLE */
+.breadcrums-group {
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.breadcrums-item,
+.breadcrums-item-1 {
+  text-transform: uppercase;
+  color: black;
+}
+
+.breadcrums-item-2 {
+  color: #686868;
+}
+/* BREADCRUMS STYLE */
+
+@media screen and(max-width: 1200px) {
+  main {
+    padding: 1.4rem 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  .leader-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .leader-item:last-child {
+    justify-self: center;
+    grid-column-start: span 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .searchbar2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchbar2 > * {
+    width: 100%;
+  }
+  .search2 > * {
+    width: 100%;
+  }
+  .search2 input {
+    width: 100%;
+  }
+  .search2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  #cocau-1 .leader-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #cocau-1 .leader-item:first-child {
+    justify-self: center;
+    grid-column-start: span 1;
+  }
+}
+
+@media screen and (max-width: 563px) {
+  .leader-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .leader-item:last-child {
+    justify-self: center;
+    grid-column-start: span 1;
+  }
+  #doitac .tab-title,
+  #khachhang .tab-title {
+    font-size: 1rem;
+  }
+}

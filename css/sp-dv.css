@@ -1,0 +1,263 @@
+/* SEARCHBAR STYLE */
+header {
+  box-shadow: 0px 15px 5px -15px #949494;
+}
+.searchbar2 {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2.2rem;
+}
+
+.phone-number2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0066b3;
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.search2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search2 input {
+  padding: 0.8rem;
+  outline: #ccc;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  width: 250px;
+  background-image: url(../images/search-icon-png-2.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 10px;
+  padding-left: 1.8rem;
+  color: #ccc;
+  caret-color: #0066b3;
+}
+.search2 input:focus {
+  border: 1px solid #0066b3;
+}
+
+.search2 .btn-find {
+  background-color: #0296e1;
+  margin-bottom: 0;
+  height: 43px;
+  font-size: 0.95rem;
+}
+
+.btn-find:hover {
+  background-color: #005596;
+}
+/* SEARCHBAR STYLE */
+
+/* BREADCRUMS STYLE */
+.breadcrums-group {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 1.8rem;
+  margin-top: 1.8rem;
+}
+
+.breadcrums-item,
+.breadcrums-item-1 {
+  text-transform: uppercase;
+  color: black;
+}
+
+.breadcrums-item-2 {
+  color: #686868;
+}
+/* BREADCRUMS STYLE */
+
+/* IGATE - MAIN STYLE */
+.section-igate {
+  background-image: url("../images/igate.png");
+}
+
+.igate-title {
+  color: white;
+  font-size: 2.6rem;
+  line-height: 1.5;
+}
+
+.igate-subtitle {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8rem 2.2rem;
+}
+
+.paragraph {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding: 1.2rem 2.2rem;
+}
+
+.wrapper_tabcontent {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.wrapper_tabcontent .igate-img {
+  width: 70%;
+}
+
+.btn {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.2rem;
+}
+
+.btn-try {
+  background-color: orange;
+  margin-right: 0.8rem;
+}
+
+.btn-try:hover {
+  background-color: rgb(255, 132, 0);
+}
+
+.btn-price {
+  background-color: rgb(0, 189, 0);
+}
+
+.btn-price:hover {
+  background-color: rgb(0, 163, 0);
+}
+
+.tabs-wrapper {
+  padding: 0 2.2rem;
+}
+
+.tabs-wrapper button {
+  background-color: #eff3f8;
+  color: black;
+  margin-bottom: 0;
+}
+.tabs {
+  display: flex;
+  border: 1px solid #ccc;
+}
+.tablinks {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+.tablinks:hover {
+  background: white;
+  color: #1e67ce;
+}
+
+.tablinks.active--tab {
+  background: #0066b3;
+  color: #fff;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent p {
+  color: #333;
+  font-size: 16px;
+}
+
+.tabcontent.active--tab {
+  display: block;
+}
+
+.links {
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.links a:hover {
+  color: #0066b3;
+}
+/* IGATE - MAIN STYLE */
+
+.section-office {
+  background-image: url("../images/iofbg.png");
+}
+
+.section-portal {
+  background-image: url("../images/portalbg.png");
+  grid-template-columns: 2fr 1fr;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 993px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .igate-img {
+    width: 50%;
+    justify-self: end;
+  }
+  .container {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .igate-img {
+    display: none;
+  }
+  .searchbar2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchbar2 > * {
+    width: 100%;
+  }
+  .search2 > * {
+    width: 100%;
+  }
+  .search2 input {
+    width: 100%;
+  }
+  .search2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .btn {
+    width: 100%;
+    margin-bottom: 0.8rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .tablinks {
+    font-size: 0.5rem;
+    flex-basis: 20%;
+  }
+}

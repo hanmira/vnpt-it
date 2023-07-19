@@ -2,16 +2,16 @@
 /* HEADER STYLE */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 3rem;
   padding: 0rem 2.2rem;
   background-color: rgb(255, 255, 255);
-  z-index: 10;
+  z-index: 10000;
 }
 
 .logo {
-  width: 277px;
+  width: 21%;
   padding: 3px 0;
 }
 
@@ -23,7 +23,7 @@ header {
   font-size: 0.95rem;
 }
 
-.nav-link:hover {
+.nav-item:hover > .nav-link {
   color: #0066b3;
   border-bottom: 4px solid #0066b3;
 }
@@ -34,6 +34,7 @@ header {
 
 .menu {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -47,7 +48,7 @@ li {
   border-bottom: 4px solid transparent;
 }
 
-.nav-item:hover > .nav-link {
+.nav-link:hover {
   border-bottom: 4px solid #0066b3;
 }
 
@@ -57,19 +58,20 @@ li {
   align-items: center;
   text-transform: uppercase;
   gap: 0.2rem;
-  font-weight: 700;
-  font-size: 0.85rem;
+  font-weight: 900;
+  font-size: 90%;
   position: relative;
 }
 
 .home-icon {
-  font-size: 0.87rem;
+  font-size: 95%;
 }
 
 .menu-icon {
   color: #0066b3;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   display: none;
+  z-index: 10000;
 }
 
 .lang {
@@ -88,7 +90,7 @@ li {
 
 .dropdown {
   position: absolute;
-  top: 4rem;
+  top: 100%;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -99,7 +101,7 @@ li {
   color: white;
   cursor: pointer;
   display: none;
-  z-index: 11;
+  z-index: 1000;
 }
 
 .dropdown > * {
@@ -158,6 +160,8 @@ li {
 @media screen and (max-width: 1200px) {
   header {
     position: relative;
+    justify-content: space-between;
+    padding: 0 1rem;
   }
   .navbar {
     display: flex;
@@ -166,10 +170,11 @@ li {
   }
   .menu {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -200%;
     width: 300px;
     height: 100vh;
     background-color: white;
@@ -202,11 +207,27 @@ li {
     display: block;
     position: absolute;
     top: 50%;
-    right: 2.2rem;
+    right: 1rem;
     transform: translateY(-50%);
     transition: all 1s ease-in-out;
   }
   .open {
     left: 0 !important;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    border: 0;
+  }
+  .menu {
+    padding-right: 0;
+  }
+  .nav-item {
+    justify-content: flex-start;
+  }
+  .nav-item:has(> .active-tab) {
+    border-bottom: 0;
+    border-right: 4px solid #0066b3;
   }
 }

@@ -1,3 +1,4 @@
+/* SEARCHBAR STYLE */
 header {
   box-shadow: 0px 15px 5px -15px #949494;
 }
@@ -36,6 +37,10 @@ header {
   background-position: 10px;
   padding-left: 1.8rem;
   color: #ccc;
+  caret-color: #0066b3;
+}
+.search2 input:focus {
+  border: 1px solid #0066b3;
 }
 
 .search2 .btn-find {
@@ -46,20 +51,22 @@ header {
 .btn-find:hover {
   background-color: #005596;
 }
+/* SEARCHBAR STYLE */
 
-/* //////////////////////////////// */
+/* BREADCRUMS STYLE */
 .breadcrums-group {
   text-transform: uppercase;
   padding: 1.2rem 2.2rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #77778d;
 }
 
 .breadcrums-item:first-child {
   color: black;
 }
+/* BREADCRUMS STYLE */
 
-/* //////////////////////////////// */
+/* SIGNUP FORM STYLE */
 .section-signin {
   display: flex;
   flex-direction: column;
@@ -75,10 +82,10 @@ header {
 }
 form {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 1rem;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2.4rem;
   flex-direction: column;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
 }
 
 form label {
@@ -88,17 +95,32 @@ form label {
 form input,
 select,
 textarea {
-  width: 500px;
-  padding: 0.4rem;
+  padding: 0.6rem;
   border-radius: 0;
   border: 1px solid #ccc;
+  font-size: 0.95rem;
+  color: rgb(116, 116, 116);
+}
+form input:focus {
+  outline: none;
+  box-shadow: 0px 0px 8px #0066b3;
+}
+form select:focus,
+form textarea:focus {
+  border: 1px solid #0066b3;
+  outline: #0066b3;
 }
 
 form .box {
-  width: 100px;
-  height: 33px;
-  border: 1px solid #ccc;
+  width: 130px;
+  height: 40px;
+  border: 1px solid rgb(0, 0, 0);
 }
+
+.mxn input {
+  width: 250px;
+}
+
 .btn-group {
   display: flex;
   gap: 0.8rem;
@@ -124,3 +146,88 @@ form .box {
   font-size: 1.8rem;
   color: #0066b3;
 }
+
+.text-red {
+  color: red;
+}
+/* SIGNUP FORM STYLE */
+
+/* RESOPONSIVE */
+@media screen and (max-width: 1200px) {
+  .search2 {
+    padding: 0 1rem;
+  }
+  .breadcrums-group {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  label {
+    font-size: 0.9rem;
+  }
+  form {
+    grid-gap: 1.2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  form input {
+    width: inherit;
+  }
+  .section-signin {
+    padding: 1rem 0;
+  }
+  .mxn {
+    display: flex;
+    flex-direction: column;
+  }
+  .mxn input {
+    width: 100%;
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding: 1rem 0;
+  }
+  .btn {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+  .searchbar2 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  .searchbar2 > * {
+    width: 100%;
+  }
+  .search2 > * {
+    width: 100%;
+  }
+  .search2 input {
+    width: 100%;
+  }
+  .search2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  form {
+    display: grid;
+    grid-template-columns: 250px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form-title {
+    text-align: center;
+  }
+}
+/* RESOPONSIVE */
