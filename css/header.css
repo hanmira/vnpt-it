@@ -163,6 +163,9 @@ li {
     justify-content: space-between;
     padding: 0 1rem;
   }
+  .logo {
+    width: 18rem;
+  }
   .navbar {
     display: flex;
     flex-direction: row;
@@ -182,6 +185,9 @@ li {
     gap: 0;
     animation: slide 0.5s ease-in-out;
     transition: all 0.5s;
+  }
+  .menu-icon {
+    font-size: 1.8rem;
   }
   .nav-item {
     border: none;
